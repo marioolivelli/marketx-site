@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar } from '../components/Navbar';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import CaseStudies from '../components/CaseStudies.astro';
+import About from '../components/About.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="MarketX - Make InfoBusiness Great Again">
+  <Navbar client:load />
+  <main>
+    <Hero />
+    <Services />
+    <CaseStudies />
+    <About />
+  </main>
+  <Footer />
+</Layout>
